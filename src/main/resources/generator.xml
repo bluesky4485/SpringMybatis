@@ -9,8 +9,8 @@
             <property name="suppressAllComments" value="true"></property>
         </commentGenerator>
         <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
-                        connectionURL="jdbc:oracle:thin:@orcl.c2skgm8svtjz.ap-northeast-1.rds.amazonaws.com:1521:orcl"
-                        userId="kole" password="aiziji102436"></jdbcConnection>
+                        connectionURL="jdbc:oracle:thin:@192.168.1.101:1521:orcl"
+                        userId="user" password="password"></jdbcConnection>
         <javaModelGenerator targetPackage="com.kolehank.sme.model"
                             targetProject="D:\workspace-idea\SpringMybatisEhCache\src\main\java">
             <property name="enableSubPackages" value="true"/>
