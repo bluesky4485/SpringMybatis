@@ -8,5 +8,6 @@ import com.kolehank.sme.model.User;
 public interface UserService {
     public User getByID(Long userID);
 
+    public int add(User u);
     public void testTransaction(User user1, User user2);
 }

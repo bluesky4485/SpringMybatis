@@ -1,4 +1,4 @@
-package com.kolehank.sme.dao;
+package com.kolehank.sme.mapper;
 
 import com.kolehank.sme.model.User;
 

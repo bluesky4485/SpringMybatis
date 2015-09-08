@@ -14,6 +14,6 @@
     <context:component-scan base-package="com.kolehank.sme.service"/>
 
     <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
-    <!--<property name="basePackage" value="com.kolehank.sme.dao"></property>-->
+    <!--<property name="basePackage" value="com.kolehank.sme.mapperper"></property>-->
     <!--</bean>-->
 </beans>

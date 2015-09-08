@@ -1,6 +1,6 @@
 package com.kolehank.sme.service;
 
-import com.kolehank.sme.dao.UserMapper;
+import com.kolehank.sme.mapper.UserMapper;
 import com.kolehank.sme.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +16,10 @@ public class UserServiceImpl implements UserService {
 
     public User getByID(Long userID) {
         return user.selectByPrimaryKey(userID);
+    }
+
+    public int add(User u) {
+        return user.insert(u);
     }
 
     @Transactional
