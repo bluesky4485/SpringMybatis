@@ -10,7 +10,7 @@
         </commentGenerator>
         <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
                         connectionURL="jdbc:oracle:thin:@orcl.c2skgm8svtjz.ap-northeast-1.rds.amazonaws.com:1521:orcl"
-                        userId="kole" password="aiziji102436"></jdbcConnection>
+                        userId="user" password="password"></jdbcConnection>
         <javaModelGenerator targetPackage="com.kolehank.sme.model"
                             targetProject="D:\workspace-idea\SpringMybatisEhCache\src\main\java">
             <property name="enableSubPackages" value="true"/>
@@ -24,6 +24,8 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <table tableName="CS_USER" domainObjectName="User" enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+               enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+                 <generatedKey column="ID" sqlStatement="Select CS_USER_SEQUENCE.nextval from dual"></generatedKey>
+        </table>
     </context>
 </generatorConfiguration>
