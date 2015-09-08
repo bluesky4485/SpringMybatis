@@ -28,7 +28,7 @@
                              type="XMLMAPPER"/>
 
         <table tableName="DEMO_USER" domainObjectName="DemoUser">
-            <generatedKey column="userid" sqlStatement="Select SEQ_DEMO_USER.nextval from dual"/>
+            <generatedKey column="userid" sqlStatement="SEQ_DEMO_USER"/>
         </table>
     </context>
 </generatorConfiguration>

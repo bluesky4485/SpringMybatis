@@ -4,13 +4,13 @@ import javax.persistence.Column;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Table(name = "DEMO_USER")
-public class DemoUser {
+public class DemoUser implements Serializable {
     @Id
     @Column(name = "USERID")
     @SequenceGenerator(name = "sql", sequenceName = "SEQ_DEMO_USER")
-    //@GeneratedValue(strategy= GenerationType.IDENTITY,generator = "Select SEQ_DEMO_USER.nextval from dual")
     private Long userid;
 
     @Column(name = "PASSWORD")
